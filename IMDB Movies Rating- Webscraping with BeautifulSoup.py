@@ -15,8 +15,6 @@ import openpyxl
 
 # ### CREATE EMPTY EXCEL SHEET TO TAKE SCRAPED FILE
 
-# In[16]:
-
 
 # create an excel file
 IMDB_Movies_Excel = openpyxl.Workbook()
@@ -24,14 +22,11 @@ IMDB_Movies_Excel = openpyxl.Workbook()
 # Assign the excel sheet and name it
 sheet = IMDB_Movies_Excel.active
 sheet.title = "IMDB Movies Rating"
-print(IMDB_Movies_Excel.sheetnames)
 
 sheet.append(['Rank', 'Name', 'Year', 'IMDB_Rating'])
 
 
 # ### WEBSCRAPING, CONVERTING SCRAPED DATA TO A LIST
-
-# In[22]:
 
 
 # Initialize an empty list to store movie ratings
